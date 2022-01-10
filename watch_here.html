@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="watch_here.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Anime Website</title>
+</head>
+
+<body>
+    <section class="sub-header-watch">
+        <nav>
+            <a href="index.html">
+                <img src="logo.png">
+            </a>
+
+            <div class="navbar" id="navlinks">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
+                    viewBox="0 0 16 16" onclick="hidemenu()" style="color: white;">
+                    <path
+                        d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z" />
+                </svg>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="#">WATCH HERE</a></li>
+                    <li><a href="#">BLOGS</a></li>
+                </ul>
+
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16" onclick="showmenu()" style="color: white;">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </nav>
+        <hr>
+        <div class="search_container">
+            <div class="play-container">
+                
+                <a href="watch_here.html" style='text-decoration:none'><i class="fas fa-play"></i></a>
+                <h4 class="company_name">Watch your favourite Anime here</h4>
+            </div>
+
+            <div class="search">
+                <input type="text" id="search-input">
+                <button class="search_btn"><i class="fas fa-search" style="color: white;"></i></button>
+            </div>
+        </div>
+
+    </section>
+    <div class="video_container">
+        <div id="video">
+            <img src="girl.png" class="thumbnail">
+            <div class="content">
+                <img src="logo.png" class="channel-icon">
+                <div class="info">
+                    <h4 class="video-title">
+                        youtube video clone 2022
+                    </h4>
+                    <p class="channel-name">
+                        code with harry
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        var navlinks = document.getElementById("navlinks")
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+
+
+    </script>
+
+</body>
+
+</html>

@@ -649,8 +649,8 @@ h2{
     
     height: auto;
     padding: 20px 20px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
     grid-gap: 20px 5px;
     overflow: hidden;
 
@@ -661,6 +661,7 @@ h2{
     padding: 10px;
     margin: 5px;
     box-shadow: 1px 2px 15px rgba(92, 91, 91, 0.815);
+    cursor: pointer;
 }
 
 .thumbnail{
@@ -693,7 +694,10 @@ h2{
     word-wrap: break-word;
     overflow-x: hidden;
 }
+.video-title::-webkit-scrollbar {
+    display: none;
+  }
 .channel-name{
     font-size: 15px ;
-    margin: 10px;
+    margin: 8px;
 }

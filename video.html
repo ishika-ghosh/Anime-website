@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="watch_here.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <title>Anime Website</title>
@@ -40,28 +40,52 @@
                     d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
             </svg>
         </nav>
-        
+
         <div class="search_container">
             <div class="play-container">
-                
+
                 <a href="watch_here.html" style='text-decoration:none'><i class="fas fa-play"></i></a>
                 <h4 class="company_name">Watch your favourite Anime here</h4>
             </div>
 
             <div class="search">
                 <input type="text" id="search-input">
-                <button class="search_btn"><i class="fas fa-search" ></i></button>
+                <button class="search_btn"><i class="fas fa-search"></i></button>
             </div>
         </div>
 
     </section>
-    <div class="video_container">
-       
+    <div class="play-video">
+        <!-- <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe> -->
+        <iframe class="youtube-Video" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+        <div class="description">
+
+
+            <img src="girl.png" class="channel-icon">
+            <div class="info" >
+                <h4 class="video-title">
+                    M A R O O N 5 GREATEST HITS FULL ALBUM - BEST SONGS OF M A R O O N 5 PLAYLIST 2021
+                </h4>
+                <p class="channel-name">
+                    Music Hub
+                </p>
+                <span class="channel-name">2021-08-26T05:38:29Z</span>
+                <br>
+                <p>
+                    M A R O O N 5 GREATEST HITS FULL ALBUM - BEST SONGS OF M A R O O N 5 PLAYLIST 2021
+                    M A R O O N 5 GREATEST HITS FULL ALBUM - BEST SONGS OF M A R O O N 5 PLAYLIST 2021
+                    M A R O O N 5 GREATEST HITS FULL ALBUM - BEST SONGS OF M A R O O N 5 PLAYLIST 2021
+                    https://youtu.be/3C0CscL1d_s
+                </p>
+            </div>
+
+
+
+        </div>
 
     </div>
-
-
-
     <script>
         var navlinks = document.getElementById("navlinks")
         function showmenu() {

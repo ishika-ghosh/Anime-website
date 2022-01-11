@@ -605,6 +605,8 @@ h2{
     display: flex;
     justify-content:space-between;
     align-items: center;
+    background: rgba(33, 33, 34, 0.63);
+  
 }
 .play-container{
     display: flex;
@@ -614,7 +616,7 @@ h2{
 .fa-play{
     color: gray;
     font-size: 34px;
-    padding: 10px 10px;
+    padding: 8px 8px;
     border: 2px solid white;
     /* border-radius: 50%; */
     margin: 10px 20px;
@@ -638,7 +640,7 @@ h2{
     cursor: pointer;
 }
 .fa-search{
-    color: rgba(41, 41, 40, 0.671);
+    color: rgba(15, 15, 15, 0.637);
 }
 .search{
     width: 50%;
@@ -653,15 +655,21 @@ h2{
     grid-template-columns: repeat(4,25%);
     grid-gap: 20px 5px;
     overflow: hidden;
-
+    background: rgb(39, 39, 39);
+    
+    
 }
 #video{
     min-height: 250px;
     height: auto;
-    padding: 10px;
+    padding: 5px;
     margin: 5px;
     box-shadow: 1px 2px 15px rgba(92, 91, 91, 0.815);
     cursor: pointer;
+    background: rgb(10, 10, 10);
+}
+.videoIdLink{
+    text-decoration: none;
 }
 
 .thumbnail{
@@ -678,6 +686,7 @@ h2{
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    color: white;
     
 }
 .channel-icon{
@@ -692,7 +701,7 @@ h2{
     height: 40px;
     width: 100%;
     word-wrap: break-word;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .video-title::-webkit-scrollbar {
     display: none;
@@ -700,4 +709,104 @@ h2{
 .channel-name{
     font-size: 15px ;
     margin: 8px;
+}
+@media(max-width: 920px){
+    .video_container{
+        grid-template-columns: repeat(2,50%);
+    }
+    .search_btn{
+        height: 40px ;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #search-input{
+        height: 38px;
+        font-size: 25px;
+    }
+    .fa-search{
+        font-size: 30px;
+    }
+    .fa-play{
+        font-size: 30px;
+        padding: 8px 8px;
+    }
+    .company_name{
+        font-size: 15px;
+    }
+}
+@media (max-width:600px) {
+    .video_container{
+        grid-template-columns: repeat(1,100%);
+    }
+    #video{
+        min-height: 300px;
+    }
+    .thumbnail{
+        height: 200px;
+    }
+    .search_btn{
+        height: 30px ;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .fa-search{
+        font-size: 25px;
+    }
+    #search-input{
+        height: 28px;
+        font-size: 15px;
+    }
+    .fa-play{
+        font-size: 20px;
+        padding: 5px 5px;
+    }
+    .company_name{
+        display: none;
+    }
+    .video-title{
+        font-size: 15px;
+        font-weight: 250;
+    }
+    .channel-name{
+        font-size: 10px;
+    }
+}
+/* youtube-video */
+.play-video{
+    
+    min-height: auto;
+    display: flex;
+    background:rgb(39, 39, 39) ;
+}
+.youtube-Video{
+    flex-basis: 60%;
+    width: 100%;
+    height: 80vh;
+
+}
+.description{
+    box-shadow: 1px 2px 15px rgba(66, 65, 65, 0.815);
+    overflow: hidden;
+    background: rgba(22, 22, 22, 0.637);
+    margin: 10px 10px;
+    flex-basis: 40%;
+    color: whitesmoke;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width: 920px){
+    .play-video{
+        flex-direction: column;
+    }
+    .youtube-Video{
+        overflow: hidden;
+        height: 100%;
+        flex-basis: 60%;
+    }
+
 }
